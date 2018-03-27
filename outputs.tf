@@ -1,0 +1,2 @@
+# Resource provides no attributes
+
