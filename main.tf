@@ -11,7 +11,7 @@ module "enabled" {
 resource "github_membership" "this" {
   count    = "${module.enabled.value ? length(var.users) : 0}"
   username = "${lookup(var.users[count.index], "username")}"
-  role     = "${lookup(var.users[count.index], "role", "member")}"
+  role     = "${lookup(var.users[count.index], "role-org", "member")}"
 
   # member or admin
 }

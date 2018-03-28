@@ -11,11 +11,11 @@ module "members" {
     },
     {
       username = "user2"
-      role     = "member"
+      role-org = "member"
     },
     {
       username = "user3"
-      role     = "admin"
+      role-org = "admin"
     },
   ]
 }
